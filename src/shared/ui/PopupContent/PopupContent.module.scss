@@ -1,0 +1,17 @@
+@import "@app/styles/breakpoints.scss";
+
+.content {
+    text-align: center;
+    height: 100%;
+    min-height: 100px;
+    width: 100%;
+    background-color: var(--color-white);
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 1rem;
+
+    @include mobile-hr {
+        padding: 0.5rem;
+    }
+
+}

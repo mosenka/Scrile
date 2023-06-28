@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    //max-width: 300px;
+    width: 100%;
+    background-color: var(--color-gray-lighten);
+    padding: 0.8rem;
+}
+
+.progress {
+    min-height: 1rem;
+    background-color: var(--color-blue);
+    transition: width 2s ease-in-out;
+}
+
+.value {
+    padding-top: 1.5rem;
+    display: block;
+    min-width: 50px;
+    position: absolute;
+    top: 100%;
+    font-weight: 800;
+    font-size: 2rem;
+    transition: left 2s ease-in-out;
+    white-space: nowrap;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 1.5rem;
+        border: 10px solid transparent;
+        border-bottom: 10px solid currentColor;
+        transition: color 0.2s, opacity 0.4s;
+
+    }
+
+    &.is-active {
+        opacity: 0;
+        color: var(--color-blue-darken);
+        transition: color 0.2s, opacity 5s;
+    }
+}
+
+
+
+

@@ -1,0 +1,21 @@
+@import "@app/styles/breakpoints.scss";
+
+.wrapper {
+    display: flex;
+    width: 100%;
+
+    @include mobile-hr {
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+    }
+}
+
+.title {
+    padding-right: 2rem;
+
+    @include mobile-hr {
+        display: block;
+        padding-bottom: 2rem;
+
+    }
+}
