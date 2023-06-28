@@ -2,7 +2,7 @@
 
 ## Demo
 
-> ..
+> https://scrile.vercel.app
 
 ### локальный запуск проекта
 
